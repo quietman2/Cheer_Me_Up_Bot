@@ -1,2 +1,2 @@
 
-TOKEN = "6898281406:AAGOlClFXvqfC1spbmGkqI7seRzKz95tRII"
+TOKEN = "put a telegram token here"

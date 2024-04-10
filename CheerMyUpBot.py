@@ -27,8 +27,6 @@ capital_lettered_quotes = RandomQuotes()
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
-    # sti = open('static/welcome.webp', 'rb')
-    # bot.send_sticker(message.chat.id, sti)
 
     # keyboard
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -47,7 +45,7 @@ def welcome(message):
 
 
 @bot.message_handler(content_types=['text'])
-def lalala(message, RandomQuotes=capital_lettered_quotes):
+def make_reply(message, RandomQuotes=capital_lettered_quotes):
     if message.chat.type == 'private':
         if message.text == '😊🎲 Weird sentence':
             bot.send_message(message.chat.id, str(s.sentence()))
